@@ -2,7 +2,7 @@
 function App() {
   return (
     <>
-    <section className="sidebar show-sidebar">
+    <section className="sidebar">
       <button className="sidebar__close-btn ">&times;</button>
       <ul className="sidebar__items">
         <li className="sidebar__item">Home</li>
@@ -13,7 +13,7 @@ function App() {
     
     </section>
 
-    <button className="open-sidebar-btn">bars here</button>
+    <button className="open-sidebar-btn">open sidebar</button>
 
       <section className="modal-container">
         <div className="modal">
@@ -24,7 +24,7 @@ function App() {
         </div>
       </section>
 
-      <button className="open-modal-btn">Show modal content</button>
+      <button className="open-modal-btn">Open modal</button>
     </>
   );
 }
