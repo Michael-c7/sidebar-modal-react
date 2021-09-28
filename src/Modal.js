@@ -2,12 +2,12 @@ import React, {useContext} from 'react'
 import {AppContext} from "./context"
 
 const Modal = () => {
-    let value = useContext(AppContext)
+    let { isModalOpen, setModalClosed } = useContext(AppContext)
 
     return (
-        <section className="modal-container">
+        <section className={`${isModalOpen ? "modal-container show-modal" : "modal-container"}`}>
         <div className="modal">
-          <button className="modal__close-btn">&times;</button>
+          <button className="modal__close-btn" onClick={setModalClosed}>&times;</button>
           <div className="modal-content">
             <h1>This is the modal content</h1>
           </div>
@@ -17,3 +17,6 @@ const Modal = () => {
 }
 
 export default Modal
+
+
+//modal-container
